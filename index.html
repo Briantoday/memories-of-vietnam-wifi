@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1a1a" />
+  <title>Memories of Vietnam — The Essence of Vietnamese Gifts</title>
+  <meta name="description" content="Authentic Vietnamese gifts at Terminal T2, Noi Bai International Airport." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="lang-toggle" role="group" aria-label="Language">
+    <button data-lang="en" class="lang-btn active" type="button">EN</button>
+    <button data-lang="vi" class="lang-btn" type="button">VI</button>
+  </div>
+
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/render-3.jpg" alt="Memories of Vietnam storefront" />
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <img src="Logo.png" alt="Memories of Vietnam" class="hero-logo-vertical" />
+
+      <p class="hero-tagline"
+         data-en="The Essence of Vietnamese Gifts"
+         data-vi="Tinh hoa quà Việt">
+        The Essence of Vietnamese Gifts
+      </p>
+
+      <div class="hero-map">
+        <p class="hero-map-label"
+           data-en="We're right next to you — just past security"
+           data-vi="Chúng tôi ngay bên cạnh bạn — sau cửa an ninh">We're right next to you — just past security</p>
+        <div class="hero-map-zoom" id="mapZoom">
+          <img src="Map final.png" alt="Terminal T2 map showing store locations" class="hero-map-img" id="mapImg" />
+          <div class="hero-map-controls">
+            <button class="map-zoom-btn" id="mapZoomIn" type="button" aria-label="Zoom in">+</button>
+            <button class="map-zoom-btn" id="mapZoomOut" type="button" aria-label="Zoom out">−</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#explore" class="btn btn-primary"
+           data-en="Explore our products"
+           data-vi="Khám phá sản phẩm">Explore our products</a>
+        <a href="#find-us" class="btn btn-outline"
+           data-en="More details"
+           data-vi="Xem chi tiết">More details</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="categories" id="explore">
+    <div class="container">
+      <h2 class="section-label"
+          data-en="What we offer"
+          data-vi="Sản phẩm của chúng tôi">What we offer</h2>
+      <h3 class="section-title"
+          data-en="Curated Vietnamese treasures"
+          data-vi="Tuyển chọn đặc sản Việt Nam">Curated Vietnamese treasures</h3>
+
+      <div class="cat-grid">
+        <div class="cat-card" style="--cat-bg: linear-gradient(135deg, #3b2012 0%, #5c3a1e 100%);">
+          <img src="images/cat-coffee.jpg" alt="Vietnamese Coffee" class="cat-img" />
+          <div class="cat-overlay"></div>
+          <div class="cat-text">
+            <h4 data-en="Coffee" data-vi="Cà phê">Coffee</h4>
+            <p data-en="Premium Vietnamese beans" data-vi="Cà phê Việt thượng hạng">Premium Vietnamese beans</p>
+          </div>
+        </div>
+        <div class="cat-card" style="--cat-bg: linear-gradient(135deg, #4a1a0a 0%, #6b3020 100%);">
+          <img src="images/cat-chocolate.jpg" alt="Vietnamese Chocolate" class="cat-img" />
+          <div class="cat-overlay"></div>
+          <div class="cat-text">
+            <h4 data-en="Chocolate" data-vi="Sô-cô-la">Chocolate</h4>
+            <p data-en="Award-winning cacao" data-vi="Cacao đạt giải quốc tế">Award-winning cacao</p>
+          </div>
+        </div>
+        <div class="cat-card" style="--cat-bg: linear-gradient(135deg, #2a4a2a 0%, #3d6b3d 100%);">
+          <img src="images/cat-tea.jpg" alt="Vietnamese Tea" class="cat-img" />
+          <div class="cat-overlay"></div>
+          <div class="cat-text">
+            <h4 data-en="Tea" data-vi="Trà">Tea</h4>
+            <p data-en="Highland tea traditions" data-vi="Truyền thống trà cao nguyên">Highland tea traditions</p>
+          </div>
+        </div>
+        <div class="cat-card" style="--cat-bg: linear-gradient(135deg, #3a1528 0%, #5c2040 100%);">
+          <img src="images/cat-spirits.jpg" alt="Vietnamese Spirits" class="cat-img" />
+          <div class="cat-overlay"></div>
+          <div class="cat-text">
+            <h4 data-en="Spirits" data-vi="Rượu">Spirits</h4>
+            <p data-en="Local wines &amp; liquors" data-vi="Rượu vang &amp; đặc sản địa phương">Local wines &amp; liquors</p>
+          </div>
+        </div>
+        <div class="cat-card" style="--cat-bg: linear-gradient(135deg, #4a3520 0%, #6b5030 100%);">
+          <img src="images/cat-souvenirs.jpg" alt="Vietnamese Souvenirs" class="cat-img" />
+          <div class="cat-overlay"></div>
+          <div class="cat-text">
+            <h4 data-en="Souvenirs" data-vi="Quà lưu niệm">Souvenirs</h4>
+            <p data-en="Handcrafted keepsakes" data-vi="Quà thủ công tinh xảo">Handcrafted keepsakes</p>
+          </div>
+        </div>
+        <div class="cat-card" style="--cat-bg: linear-gradient(135deg, #5a3a10 0%, #7a5520 100%);">
+          <img src="images/cat-snacks.jpg" alt="Vietnamese Snacks" class="cat-img" />
+          <div class="cat-overlay"></div>
+          <div class="cat-text">
+            <h4 data-en="Snacks" data-vi="Đồ ăn vặt">Snacks</h4>
+            <p data-en="Dried fruits &amp; treats" data-vi="Trái cây sấy &amp; đặc sản">Dried fruits &amp; treats</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery reveal">
+    <div class="container">
+      <h2 class="section-label"
+          data-en="Step inside"
+          data-vi="Bước vào không gian">Step inside</h2>
+      <h3 class="section-title"
+          data-en="A world-class shopping experience"
+          data-vi="Trải nghiệm mua sắm đẳng cấp">A world-class shopping experience</h3>
+    </div>
+
+    <div class="gallery-track">
+      <div class="gallery-slide active" style="background-image: url('images/render-1.jpg');"></div>
+      <div class="gallery-slide" style="background-image: url('images/render-2.jpg');"></div>
+      <div class="gallery-slide" style="background-image: url('images/render-4.jpg');"></div>
+    </div>
+
+    <div class="gallery-dots" role="tablist">
+      <button class="g-dot active" data-slide="0" aria-label="Slide 1" type="button"></button>
+      <button class="g-dot" data-slide="1" aria-label="Slide 2" type="button"></button>
+      <button class="g-dot" data-slide="2" aria-label="Slide 3" type="button"></button>
+    </div>
+  </section>
+
+  <section id="find-us" class="location reveal">
+    <div class="container">
+      <div class="location-inner">
+        <div class="location-text">
+          <h2 class="section-label section-label--light"
+              data-en="Visit us"
+              data-vi="Ghé thăm">Visit us</h2>
+          <h3 class="section-title section-title--light"
+              data-en="Find us at Terminal T2"
+              data-vi="Tìm chúng tôi tại Nhà ga T2">Find us at Terminal T2</h3>
+
+          <div class="location-details">
+            <div class="location-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2C8 2 5 5.6 5 10c0 7 7 12 7 12s7-5 7-12c0-4.4-3-8-7-8z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <strong data-en="Floor 2 · Departure Hall · Isolation Area"
+                        data-vi="Tầng 2 · Ga đi · Khu Cách ly">Floor 2 · Departure Hall · Isolation Area</strong>
+                <span data-en="Right after security check — both sides"
+                      data-vi="Ngay sau kiểm tra an ninh — cả hai bên">Right after security check — both sides</span>
+              </div>
+            </div>
+            <div class="location-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+              <div>
+                <strong data-en="Open daily"
+                        data-vi="Mở cửa hàng ngày">Open daily</strong>
+                <span data-en="First flight to last flight"
+                      data-vi="Từ chuyến bay đầu đến chuyến bay cuối">First flight to last flight</span>
+              </div>
+            </div>
+            <div class="location-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5M12 2l10 5-10 5L2 7l10-5z"/>
+              </svg>
+              <div>
+                <strong data-en="Terminal T2"
+                        data-vi="Nhà ga T2">Terminal T2</strong>
+                <span data-en="Noi Bai International Airport, Hanoi"
+                      data-vi="Cảng hàng không quốc tế Nội Bài, Hà Nội">Noi Bai International Airport, Hanoi</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner reveal">
+    <div class="container">
+      <h2 data-en="Take a piece of Vietnam home"
+          data-vi="Mang một mảnh Việt Nam về nhà">
+        Take a piece of Vietnam home
+      </h2>
+      <p data-en="Visit us before your flight — we're right after security."
+         data-vi="Ghé thăm trước chuyến bay — ngay sau cửa an ninh.">
+        Visit us before your flight — we're right after security.
+      </p>
+      <a href="#find-us" class="btn btn-primary btn-lg"
+         data-en="Get directions"
+         data-vi="Chỉ đường">Get directions</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo" role="img" aria-label="Memories of Vietnam"></div>
+      <p>© Memories of Vietnam · Terminal T2 · Noi Bai International Airport</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
